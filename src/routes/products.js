@@ -2,6 +2,8 @@
 const express = require('express');
 const router = express.Router();
 
+const {upLoadImage} = require('../middlewares/upLoad')
+
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
 
@@ -10,7 +12,8 @@ router.get('/', productsController.index);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', productsController.create); 
-router.post('/create', productsController.store); 
+//Entre la ruta y la accion del controlador pongo la variable creada para la ejecucion + single(porque es una sola)+el "name" del input del formulario
+router.post('/create', upLoadImage.single('image'), productsController.store); 
 
 
 /*** GET ONE PRODUCT ***/ 

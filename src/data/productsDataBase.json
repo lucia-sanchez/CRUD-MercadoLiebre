@@ -142,6 +142,14 @@
       "image": "img-parlante-sony.jpg",
       "category": "visited",
       "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto."
+   },
+   {
+      "id": 17,
+      "name": "Nintendo Switch",
+      "price": 120000,
+      "discount": 10,
+      "category": "in-sale",
+      "description": "Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos.\r\n\r\nSwitch se convirtió en una de las consolas más versátiles del mercado gracias a su uso portátil y de sobremesa. Nintendo desarrolló este modelo con el objetivo de tener todas las comodidades de la tecnología de elite en un aparato portátil con el que podrás jugar y disfrutar de diverso contenido online.",
+      "image": "image1676684228413.webp"
    }
-  
 ]

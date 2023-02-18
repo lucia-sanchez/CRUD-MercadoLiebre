@@ -51,12 +51,12 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		const newProduct = {
 			id: products[products.length - 1].id + 1,
 			name:name.trim(),
-			description:description.trim(),
 			price: +price,
 			discount: +discount,
 			category:category.trim(),
-			image: null,
-			category
+			description:description.trim(),
+			image: req.file ? req.file.filename : null
+			
 		}
 
 		products.push(newProduct);
@@ -92,6 +92,8 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 				category : category,
 				description : description.trim(),
 				image : product.image,
+				
+				
 			}
 		
 			const productsModified = products.map(product=>{
